@@ -1,0 +1,33 @@
+#work_mode: sandbox
+work_mode: production
+
+debug: False
+#debug: True
+
+supplier: supplier
+
+items_file_name: "database.csv"
+
+price_calculation:
+  post_expenses: 7
+  other_expenses_proc: 16
+  difference_from_lowest_price: 0.2 # kiek paradvimo kaina turi but mazesne uz konkurentu zemiausia
+  minimum_earnings: 4
+
+pp_mail_address:
+  sandbox: "nobody@gmail.com"
+  production: "nobody@gmail.com"
+  production_asm: "nobody@gmail.com"
+
+prices:
+  minimum_price_with_vat: 20
+  percentage: '20'
+  postage: '5'
+
+vehicles_shown_in_title: 4
+
+minimum_item_stock: '2'
+
+request_retry_count: 5
+
+user_agent: "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_3) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/12.0.3 Safari/605.1.15"
